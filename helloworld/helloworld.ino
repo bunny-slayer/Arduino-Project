@@ -15,7 +15,7 @@ void setup()
 void loop()
 {
   buttonState = digitalRead(buttonPin);
-  if(buttonState == HIGH){
+  if(buttonState == LOW){
     digitalWrite(LEDD1, HIGH);
     Serial.print("LED :");
     Serial.println(buttonState);
